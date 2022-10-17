@@ -27,8 +27,8 @@ body{
 
 .container>*{
     background-color: black;
-    height: 4rem;
-    width: 4rem;
+    width: 20%;
+    aspect-ratio: 1 / 1;
     margin: 2rem;
     border-radius: 50%;
     cursor: pointer;
