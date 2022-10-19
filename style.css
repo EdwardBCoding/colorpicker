@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 *{
     margin: 0;
@@ -7,16 +7,17 @@
 }
 
 body{
+    background-color: darkslategray;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     cursor: default;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 h1{
-    font-size: 10vw;
+    font-size: 8vw;
 }
 
 .container{
@@ -41,11 +42,11 @@ h1{
 }
 
 .red{
-    background-color: rgb(227, 60, 42);
+    background-color: rgb(227, 113, 42);
 }
 
 .blue{
-    background-color: rgb(39, 94, 233);
+    background-color: rgb(39, 210, 233);
 }
 
 .green{
@@ -53,17 +54,38 @@ h1{
 }
 
 .purple{
-    background-color: rgb(76, 25, 112);
+    background-color: rgb(211, 110, 186);
+}
+
+h1::before{
+    display: block;
+    position: fixed;
+    content: "";
+    width: 1vw;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    background-color: rgb(227, 113, 42);
+    transform: translate(50px, -100px);
+    animation: colorsmash 1s ease both;
 }
 
 
 
+@keyframes colorsmash {
+    0%{
+        transform: translate(50px, -100px);
+    }
+    100%{ 
+        transform: translate(0px, 100px);
+    }
+}
+
 .cred{
-    color: rgb(227, 60, 42);
+    color: rgb(227, 113, 42);
 }
 
 .cblue{
-    color: rgb(39, 94, 233);
+    color: rgb(39, 210, 233);
 }
 
 .cgreen{
@@ -71,5 +93,5 @@ h1{
 }
 
 .cpurple{
-    color: rgb(76, 25, 112);
+    color: rgb(211, 110, 186);
 }
