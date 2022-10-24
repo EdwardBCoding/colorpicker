@@ -10,6 +10,11 @@ const subject = document.querySelector('h1')
 
 const cls = ['cred', 'cblue', 'cgreen', 'cpurple']
 
+function dotMover() {
+    let pos = subject.getBoundingClientRect()
+    document.documentElement.style.setProperty('--top-pos', pos.top + "px");
+}
+
 pickerRed.addEventListener("click", e =>{
     dotRed.classList.add("active")
     function colorChange() {
@@ -18,6 +23,7 @@ pickerRed.addEventListener("click", e =>{
         dotRed.classList.remove("active");
     }
     setTimeout(colorChange,500)
+    dotMover()
     
 })
 pickerBlue.addEventListener("click", e =>{
